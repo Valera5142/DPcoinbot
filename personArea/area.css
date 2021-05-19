@@ -1,0 +1,437 @@
+@import "https://use.fontawesome.com/releases/v5.5.0/css/all.css";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Century Gothic';
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    position: relative;
+    background: url(../images/dpbg.png);
+    margin: 0;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: black;
+}
+
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.NotPersArea:hover {
+    background-color: #00aee9;
+    color: black;
+}
+
+.PersArea:hover {
+    background-color: #00dfa6;
+    color: black;
+}
+
+.active {
+    background-color: black;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+.icon {
+    color: white;
+}
+
+.titlext>h2 {
+    font-size: 20px;
+    color: white;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    left: 0;
+    top: 0;
+    overflow: auto;
+    width: 100%;
+    height: 100%;
+    justify-content: center !important;
+    align-items: center !important;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modal-content {
+    width: 500px;
+    height: 400px !important;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    background: #00aee9;
+    border: 4px solid #00dfa6;
+}
+
+.modal-text {
+    margin: 10px;
+    padding: 10px;
+}
+
+.close {
+    float: right;
+    margin-right: 3px;
+    margin-top: 7px;
+}
+
+.inpm {
+    border: 0;
+    background: none !important;
+    display: block;
+    margin: 20px auto;
+    margin-left: 0px;
+    font-size: 16px;
+    border: none !important;
+    border-bottom: 2px solid white !important;
+    padding: 14px 15px;
+    width: 350px;
+    outline: none;
+    border-radius: 0px !important;
+}
+
+.inpm:focus {
+    border-color: black;
+}
+
+.problem {
+    resize: none;
+    border: 2px solid white;
+    width: 350px;
+    height: 142px;
+    padding: 5px;
+    background: none;
+    outline: none;
+}
+
+.inpm::placeholder {
+    color: white;
+}
+
+.problem::placeholder {
+    color: white;
+}
+
+.but {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.btn {
+    border: 0;
+    background: none;
+    display: flex;
+    margin: 20px auto;
+    text-align: center;
+    border: 2px solid white;
+    width: 230px;
+    height: 30px;
+    outline: none;
+    border-radius: 24px;
+    transition: 0.25s;
+    cursor: pointer;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.btn:hover {
+    background: white;
+}
+
+.nicereg {
+    color: red;
+    border: 2px solid red;
+    text-align: center;
+    padding: 5px;
+}
+
+.greennicereg {
+    color: #00dfa6;
+    border: 2px solid #00dfa6;
+    text-align: center;
+    padding: 5px;
+}
+
+.avatars {
+    width: 70px;
+    height: 70px;
+}
+
+.img_icon {
+    width: 70px;
+    height: 70px;
+}
+
+.avatar {
+    text-align: center;
+    margin: 10px;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.inavatar {
+    padding-top: 15px;
+    padding-bottom: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    width: auto;
+    border: 2px solid #00dfa6;
+}
+
+.title {
+    text-align: center;
+    color: white;
+}
+
+.all {
+    display: flex;
+    justify-content: center;
+}
+
+.txt {
+    color: white;
+    width: 95px;
+    text-decoration: none;
+    border-bottom: 2px solid #00aee9;
+    transition: all 0.5s;
+}
+
+.txt:hover {
+    border-bottom: 2px solid #00dfa6;
+}
+
+.login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 74vh;
+    flex-direction: column;
+}
+
+.fst {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.scd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.thd {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.otdel {
+    margin-left: 100px;
+    margin-right: 100px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.normal {
+    margin-bottom: 10px;
+}
+
+.mes {
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width: 700px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .topnav.responsive {
+        position: relative;
+    }
+    .topnav.responsive .icon {
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .modal-content {
+        width: 420px;
+    }
+}
+
+@media screen and (max-width: 440px) {
+    .modal-content {
+        width: 380px;
+    }
+    .problem {
+        width: 330px;
+    }
+    .inpm {
+        width: 330px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .modal-content {
+        width: 300px;
+    }
+    .btn {
+        margin: 5px 15px;
+    }
+    .problem {
+        width: 250px;
+    }
+    .inpm {
+        width: 250px;
+    }
+}
+
+@media screen and (max-width: 318px) {
+    .modal-content {
+        width: 260px;
+    }
+    .btn {
+        margin: 5px 15px;
+    }
+    .close {
+        margin-left: 20px;
+    }
+    .modal-text {
+        margin: 5px;
+    }
+    .problem {
+        width: 225px;
+    }
+    .inpm {
+        width: 225px;
+    }
+}
+
+@media screen and (max-width: 847px) {
+    .otdel {
+        margin-left: 85px;
+        margin-right: 85px;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .otdel {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+@media screen and (max-width: 715px) {
+    .otdel {
+        margin-left: 75px;
+        margin-right: 75px;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .otdel {
+        margin-left: 70px;
+        margin-right: 70px;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .otdel {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+}
+
+@media screen and (max-width: 615px) {
+    .otdel {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media screen and (max-width: 555px) {
+    .otdel {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+}
+
+@media screen and (max-width: 515px) {
+    .otdel {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .otdel {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .all {
+        margin-top: 270px;
+    }
+    .fst {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .scd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .thd {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .img_icon {
+        width: 80px;
+        height: 80px;
+    }
+}
+
+@media screen and (max-width: 160px) {
+    .all {
+        margin-top: 300px;
+    }
+}
